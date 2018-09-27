@@ -245,6 +245,9 @@ input {
 				@include icon-color('confirm-fade', 'actions', $color-black, 2, true);
 			}
 		}
+		&:invalid + .icon-confirm {
+			border-color: var(--color-error);
+		}
 
 		/* only show confirm borders if input is not focused */
 		&:not(:active):not(:hover):not(:focus){
